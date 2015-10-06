@@ -1,0 +1,27 @@
+# Add completion to git
+if [ -f ~/.git-completion.sh ]; then
+  . ~/.git-completion.sh
+fi
+
+# Add __git_ps1
+if [ -f ~/.git-prompt.sh ]; then
+  . ~/.git-prompt.sh
+fi
+
+# Make ps1 and ls nice
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1)\$ '
+
+# Add reasonable git shortcuts
+alias gs='git status'
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit'
+alias go='git checkout'
+
+# Nice git log graph
+alias hlog='git log --date-order --all --graph --format="%C(green)%H %Creset%C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset %s"'
+
+# Fix fat fingering
+alias got='git'
