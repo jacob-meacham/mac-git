@@ -1,10 +1,10 @@
 Making git nicer to work with on OS X
 
 # Installation
-This repo just packages up a few git tools (thanks to Shawn O. Pearce) and a common profile for use with Mac OS X. The easiest way to use this repo:
+This repo just packages up a few git tools (thanks to Shawn O. Pearce) and a common profile for use with Mac OS X. The easiest way to use this repo, from your home directory:
 
-1. ln -s git-completion.sh ~/.git-completion.sh
-2. ln -s git-prompt.sh ~/.git-prompt.sh
+1. ln -s [path-to-repo]/git-completion.sh .git-completion.sh
+2. ln -s [path-to-repo]/git-prompt.sh .git-prompt.sh
 3. Add the top of profile.example to your ~/.profile.
 4. (Optional) Add the rest of profile.example to your profile.
 
